@@ -1,4 +1,24 @@
-﻿<h1>MVCPractice Home About Pageee.....</h1>
+﻿@model List<City>
+
+	<ul>
+		@foreach (var city in Model)
+	{
+		<a>
+			<h1>@city.Name <br /></h1>
+		</a>
+		
+	}
+	</ul>
 
 
-<h1>This data sended Index action: @TempData["Slogan"]</h1>
+
+
+
+
+
+
+
+@* 
+<h1>MVCPractice Home About Pageee.....</h1>
+
+<h1>This data sended Index action: @TempData["Slogan"]</h1> *@
